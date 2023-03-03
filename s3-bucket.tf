@@ -1,5 +1,6 @@
-module "s3_bucket" {
-  source = "airrik19/terraform-aws-s3-bucket"
+module "s3-bucket" {
+  source  = "app.terraform.io/lyukai-test/s3-bucket/aws"
+  version = "2.8.0"
 
   bucket = "my-s3-bucket"
   bucket_prefix = "lyukai"
